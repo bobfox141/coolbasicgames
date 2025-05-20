@@ -51,7 +51,8 @@ puts "check you will be asked for a new rate of gas flow. A rate is"
 puts "[-10..10] where 1 is idle and 10 is hard acceleration, and"
 puts "(-) numbers are braking."
 # so it appears that the number of the car is matched the amount of
-# control inputs and petrol it uses.
+# control inputs and petrol it uses. oh, never mind. it reads the data statement
+# it selects.
 for i in 1..car do
   read h,m,s
   b=b/10
@@ -59,5 +60,10 @@ end
 
 
 
-
 exit(true)
+
+
+#data 45,,53,10
+#data 60,,5,13
+#data 70,,41,15
+#data 80,,39,18

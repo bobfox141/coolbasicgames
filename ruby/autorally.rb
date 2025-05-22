@@ -8,7 +8,7 @@
 
 def game(data)
   carnames = [ "FreeRide", "Mini", "Lotus", "Trans-Am", "Ferrari" ]
-  coursenames = ["Freecourse", "StraightOn", "CurvyCanyon", "Window" ]
+  coursenames = ["Freecourse", "StraightOn", "CurvyCanyon", "Window", "Hairpin" ]
   puts "The Car Rally"
   puts "This is the Super Car Rally that all drivers in the world"
   puts "wait for. The driving is tough this year and we all wish you"
@@ -35,6 +35,7 @@ def game(data)
   puts "You now choose the course you want to race on."
   puts "The easiest course is number 1, and it is the straightest route. "
   puts "Course 5 consists mostly of twists and turns."
+  puts "#{coursenames}"
   while true
       print "Which course do you want to race [1..5]: "
       course = gets.to_i()
@@ -78,7 +79,9 @@ def game(data)
       print "Invalid throttle setting ==> "
     end
   end
-
+  z = z + 1
+  if z > 4 then
+    puts "You blew your engine!!"
 
 
 
@@ -120,6 +123,7 @@ def theFinishLine()
   if ans == "Y" then
     replay = true
   end
+  # determine win conditions
 
 
 end
